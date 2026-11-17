@@ -2,3 +2,61 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1f2937;
+  color: white;
+}
+
+.navbar-logo {
+  margin: 0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-categorias {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-categorias a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-categorias a:hover {
+  color: #fbbf24;
+}
+
+
+.cart-widget {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.3rem;
+}
+
+.cart-count {
+  background-color: #ef4444;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  padding: 0.15rem 0.5rem;
+}
+
+.item-list-container {
+  text-align: center;
+  margin-top: 3rem;
+}
