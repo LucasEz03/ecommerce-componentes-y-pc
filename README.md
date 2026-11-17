@@ -2,13 +2,15 @@
 
 E-commerce de venta de componentes de PC (procesadores, placas de video, memorias RAM, almacenamiento, etc.) y computadoras armadas a medida. Permite explorar el catálogo de productos, ver el detalle de cada uno y gestionar un carrito de compras.
 
-Proyecto desarrollado como parte del curso de React de Coderhouse. Actualmente se encuentra en su etapa inicial: solo cuenta con la estructura base del proyecto.
+Proyecto desarrollado como parte del curso de React de Coderhouse. Actualmente se encuentra en desarrollo: cuenta con la estructura base y el layout inicial (Navbar, CartWidget e ItemListContainer).
 
 ## Tecnologías utilizadas
 
 - React
 - Vite
 - JavaScript
+- react-icons
+- CSS
 - ESLint
 
 ## Instalación y ejecución
@@ -16,13 +18,13 @@ Proyecto desarrollado como parte del curso de React de Coderhouse. Actualmente s
 1. Clonar el repositorio:
 
    ```bash
-   git clone https://github.com/LucasEz03/Preentrega1-react.git
+   git clone https://github.com/LucasEz03/ecommerce-componentes-y-pc.git
    ```
 
 2. Entrar a la carpeta del proyecto:
 
    ```bash
-   cd tienda-componentes
+   cd ecommerce-componentes-y-pc
    ```
 
 3. Instalar las dependencias:
@@ -38,3 +40,23 @@ Proyecto desarrollado como parte del curso de React de Coderhouse. Actualmente s
    ```
 
 5. Abrir en el navegador la URL que muestra la terminal (normalmente `http://localhost:5173`).
+
+## Estructura del proyecto
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── CartWidget.jsx
+│   └── ItemListContainer.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## Componentes
+
+- **Navbar**: barra de navegación con el nombre de la tienda a la izquierda y, a la derecha, las categorías de productos (Monitores, Placas madre, Memoria RAM y Procesadores) junto al `CartWidget`. Está maquetada con Flexbox.
+- **CartWidget**: componente hijo del `Navbar`. Muestra un ícono de carrito (de `react-icons`) y un número de notificación que representa la cantidad de productos en el carrito.
+- **ItemListContainer**: recibe la prop `greeting` y la muestra dentro de un `<h1>` centrado en la pantalla. Más adelante va a mostrar el listado de productos.
+- **App**: componente raíz que ensambla el `Navbar` y el `ItemListContainer`, pasándole un mensaje de bienvenida mediante la prop `greeting`.

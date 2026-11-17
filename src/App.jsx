@@ -1,8 +1,12 @@
-import Header from './components/Header'
+import Navbar from './components/Navbar'
+import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   return (
-    <Header />
+    <>
+      <Navbar />
+      <ItemListContainer greeting="¡Bienvenidos a TechStore! Encontrá los mejores componentes para tu PC"/>
+    </>
   )
 }
 
